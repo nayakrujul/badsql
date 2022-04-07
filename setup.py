@@ -1,13 +1,13 @@
 from distutils.core import setup
-from pathlib import Path
+import requests
 
-this_directory = Path(__file__).parent
-long_description = (this_directory / "README.md").read_text()
+response = requests.get('https://raw.githubusercontent.com/nayakrujul/badsql/main/README.md')
+long_description = response.text
 
 setup(
   name = 'badsql',
   packages = ['badsql'],
-  version = '1.0.2',
+  version = '1.1',
   license='MIT',
   description = 'SQL but worse',
   author = 'Rujul Nayak',
