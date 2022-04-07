@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 setup(
   name = 'badsql',
   packages = ['badsql'],
-  version = '0.3.1',
+  version = '0.3',
   license='MIT',
   description = 'SQL but worse',
   author = 'Rujul Nayak',
