@@ -7,14 +7,14 @@ long_description = (this_directory / "README.md").read_text()
 setup(
   name = 'badsql',
   packages = ['badsql'],
-  version = '0.3',
+  version = '1.0',
   license='MIT',
   description = 'SQL but worse',
   author = 'Rujul Nayak',
   author_email = 'rujulnayak@outlook.com',
   url = 'https://github.com/nayakrujul/badsql',
   download_url = 'https://github.com/nayakrujul/badsql/archive/refs/tags/v_01.tar.gz',
-  keywords = ['database', 'SQL', 'worse'],
+  keywords = ['database', 'SQL', 'file'],
   install_requires=[
       ],
   classifiers=[
