@@ -67,3 +67,18 @@ Note:
 for .save() and load(), '.csv' is appended at the end of the filename in all cases.
 
 [View on Github](https://github.com/nayakrujul/badsql)
+
+### Changes
+
+#### 7th April 2022
+
+v0.1 - Initial release
+
+v0.2 - Bug fix in \__init__.py
+
+v0.3 - Added README.md
+
+v1.0.1 - Bug fix in setup.py
+
+v1.1 - All bugs fixed, available for use with `pip install badsql`
+
