@@ -65,3 +65,5 @@ db2.display()
 Note:
 
 for .save() and load(), '.csv' is appended at the end of the filename in all cases.
+
+[View on Github](https://github.com/nayakrujul/badsql)
