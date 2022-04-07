@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'badsql',
   packages = ['badsql'],
-  version = '0.1',
+  version = '0.2',
   license='MIT',
   description = 'SQL but worse',
   author = 'Rujul Nayak',
