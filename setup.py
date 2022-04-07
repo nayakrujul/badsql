@@ -1,7 +1,8 @@
 from distutils.core import setup
 from pathlib import Path
 
-long_description = open('README.md').read()
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setup(
   name = 'badsql',
