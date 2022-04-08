@@ -90,7 +90,7 @@ v0.1 - Initial release
 
 v0.2 - Bug fix in \__init__.py
 
-v0.3 - Added README.md
+v0.3 (now deleted) - Added README.md
 
 v1.0.1 - Bug fix in setup.py
 
