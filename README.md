@@ -76,7 +76,7 @@ mydb.remove([2, 'Will', 10])
 
 Similarly `mydb.remove_all([2, 'Will', 10])` removes all the instances of \[2, 'Will', 10]
 
-This removes the row in position 1
+`.delete(x)` removes the row in position x
 
 ```python
 mydb.delete(1)
