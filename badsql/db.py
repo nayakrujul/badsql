@@ -46,6 +46,30 @@ class db:
 
         self.table.pop(ind)
 
+    def remove(self, row):
+
+        if not isinstance(row, list):
+            raise (
+                ValueError('row argument must be an list, not ' + str(type(row)))
+            )
+
+        if row not in self.table:
+            raise (
+                ValueError('row not in table, cannot remove')
+            )
+
+        self.table.remove(row)
+
+    def remove_all(self, row):
+
+        if not isinstance(row, list):
+            raise (
+                ValueError('row argument must be an list, not ' + str(type(row)))
+            )
+
+        while row in self.table:
+            self.table.remove(row)
+
     def display(self):
 
         row_size = len(self.table[0])
@@ -142,41 +166,3 @@ def load(filename):
         mydb.insert(len(mydb.table), lst[i])
 
     return mydb
-
-if __name__ == '__main__':
-
-    # Pass the headers as the parameter to db()
-    mydb = db(['id', 'name', 'age'])
-    
-    # Use .insert(pos, row) to add to the table
-    mydb.insert(1, [0, 'Bob', 11])
-    mydb.insert(2, [1, 'Sam', 9])
-    mydb.insert(3, [2, 'Will', 10])
-    
-    # Use .display() to show the table
-    print('Full table:\n')
-    mydb.display()
-    print('\n')
-    
-    # Use .select(query) to select specific rows
-    print('Where age >= 10:\n')
-    mydb.select('age >= 10').display()
-    print('\n')
-    
-    # Any Python-compilable code can be used
-    print('Where len(name) != 4:\n')
-    mydb.select('len(name) != 4').display()
-    print('\n')
-    
-    # This returns a db object so you can use
-    # methods like .display() on it
-    
-    # To save the table use .save(filename)
-    mydb.save('table')
-    
-    # To load in a table from a file use load(filename)
-    db2 = load('table')
-    
-    # This returns a db object
-    print('Loaded from table.csv:\n')
-    db2.display()
