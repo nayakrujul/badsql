@@ -1,13 +1,11 @@
 from distutils.core import setup
-import requests
 
-response = requests.get('https://raw.githubusercontent.com/nayakrujul/badsql/main/README.md')
-long_description = response.text
+long_description = 'A file-based version of SQL.\n\nRead the docs at https://github.com/nayakrujul/badsql/blob/main/README.md'
 
 setup(
   name = 'badsql',
   packages = ['badsql'],
-  version = '1.1',
+  version = '1.2',
   license='MIT',
   description = 'SQL but worse',
   author = 'Rujul Nayak',
@@ -31,5 +29,5 @@ setup(
     'Programming Language :: Python :: 3.9',
   ],
   long_description=long_description,
-  long_description_content_type='text/markdown'
+  long_description_content_type='text/x-rst'
 )
