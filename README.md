@@ -1,7 +1,7 @@
 # badsql
 This is a file-based version of SQL.
 
-
+badsql is only for Python scripts. For the terminal version, see [badsql-tools](https://github.com/nayakrujul/badsql-tools).
 
 Pass the headers as the parameter to `db()`
 
